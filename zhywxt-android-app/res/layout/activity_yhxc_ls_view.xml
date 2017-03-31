@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+	   <LinearLayout
+	            android:layout_width="match_parent"
+	        	android:layout_height="wrap_content" 
+	        	android:orientation="vertical" 
+	            >
+             <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_szdm" style="@style/black_normal_18" />
+	            <TextView android:id="@+id/tv_szdm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50dip" android:layout_weight="1.0" style="@style/gray_normal_18" />
+	         </LinearLayout>
+             <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_shlx" style="@style/black_normal_18" />
+	            <TextView android:id="@+id/tv_shlx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" style="@style/gray_normal_18"/>
+	         </LinearLayout>
+	         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_qzzh" style="@style/black_normal_18" />
+	            <TextView android:id="@+id/tv_qzdzh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:layout_weight="1.0" style="@style/gray_normal_18"/>
+	         </LinearLayout>
+	         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_fxsj" style="@style/black_normal_18" />
+	            <TextView android:id="@+id/tv_fxsj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" style="@style/gray_normal_18"/>
+	         </LinearLayout>
+	         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_xcqk" style="@style/black_normal_18"/>
+	            <TextView android:id="@+id/tv_xcqk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:lines="3" style="@style/gray_normal_18"/>
+	         </LinearLayout>
+	         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lab_czcs" style="@style/black_normal_18" />
+	            <TextView android:id="@+id/tv_czcs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="50.0dip" android:lines="3" style="@style/gray_normal_18"/>
+	         </LinearLayout>
+	         <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+	            <TextView android:gravity="right" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/lab_tpxx" style="@style/black_normal_18" />
+	            <GridView 
+			        android:id="@+id/gv_images"
+			        android:layout_width="230dp"
+			        android:layout_height="230dp"
+			        android:layout_marginLeft="5dp"
+			        android:horizontalSpacing="3dp"        
+			        android:numColumns="3"
+			        android:scrollbars="none"
+			        android:verticalSpacing="5dp" >
+			    </GridView>
+	         </LinearLayout>
+	   </LinearLayout>
+</ScrollView>

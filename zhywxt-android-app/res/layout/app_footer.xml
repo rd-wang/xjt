@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.catsic.core.custom.AppFooterView android:background="@drawable/footer_bg" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/appfooter_foot1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@+id/appfooter_foot2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@+id/appfooter_foot3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@+id/appfooter_foot4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</com.catsic.core.custom.AppFooterView>

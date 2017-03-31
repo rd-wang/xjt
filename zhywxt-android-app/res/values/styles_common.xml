@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="white_bold_normal">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_bold_20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_16">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_14">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_12">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="black_bold_20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="black_bold_18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="black_normal_20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="black_normal_18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="black_normal_12">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="gray_normal_18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="blue_normal_18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff102b6a</item>
+    </style>
+    <style name="gray_normal_16">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#989898</item>
+    </style>
+    <style name="blue_bold_20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff102b6a</item>
+    </style>
+    <style name="blue_bold_23">
+        <item name="android:textSize">23.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff102b6a</item>
+    </style>
+    <style name="blue_bold_28">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff102b6a</item>
+    </style>
+    <style name="white_bold_30">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="white_bold_22">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lightblue_normal_14">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff008792</item>
+    </style>
+    <style name="listView_simple">
+        <item name="android:background">@color/bg_common_listview_item_selector</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="btn_green_bold_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/bg_btn_green_selector</item>
+    </style>
+</resources>

@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<!-- meta tags start -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- meta tags end -->
+
+<!-- CSS files start -->
+<link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="plugins/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="plugins/jquerymobile/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+<link href="plugins/jquerymobile/jquery.mobile-1.4.5.css" rel="stylesheet">
+<!-- CSS files end -->
+
+<!-- JavaScript files start -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/cordova.js"></script>
+<script type="text/javascript" src="js/callActivity.js"></script>
+<!-- JavaScript files end -->
+<script type="text/javascript">
+  function clickFun(){
+	  //1.调用activity
+	  //var params={activityName:"com.catsic.hybrid.action.TestActivity",data:{name:'zhangsan'}};
+	  //2.处理,不跳转
+	  var params={data:{name:'zhangsan'}};
+		window.callActivityPlugin(params , function(value) {
+			alert(value);
+			if(value=="success"){
+				//alert("success");
+			}
+		});
+  }
+</script>
+</head> 
+<body>
+<div data-role="page" id="page">
+    <div data-role="header" data-theme="b" ><h2>头部</h2></div>
+	<div data-role="content">	
+			<button type="button" class="btn btn-primary" onclick="clickFun();">button</button>
+	</div>
+	<div data-role="footer" data-theme="b" data-position="fixed">
+		<h4>底部</h4>
+	</div>
+</div>
+</body>
+</html>

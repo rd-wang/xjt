@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/ActionBarMenu</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    
+    <style name="CustomActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="android:background">@color/actionbar_bg</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarSubtitle</item>
+        <item name="android:selectableItemBackground">@drawable/ad_selectable_background</item>
+        <item name="android:actionButtonStyle">@style/ActionBarActionButtonStyle</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle</item>
+        <item name="android:actionDropDownStyle">@style/ActionBarDropDownNav</item>
+        <item name="android:dropDownListViewStyle">@style/ActionBarDropDownListView</item>
+    </style>
+    
+     <!-- ActionBar菜单文字样式 -->
+    <style name="ActionBarMenu" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ActionBar标题的样式 -->
+    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- ActionBar自定义中间标题的样式 -->
+    <style name="ActionBarCenterTitle" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ActionBar副标题的样式 -->
+    <style name="ActionBarSubtitle" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- ActionBar操作项元素的样式 -->
+    <style name="ActionBarActionButtonStyle" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+    </style>
+    
+    <!-- ActionBarTab选项标签的样式 -->
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
+    </style>
+
+    <!-- Tab选项标签字体的样式 -->
+    <style name="ActionBarTabTextStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- ActionBar下拉导航外部按钮的样式 -->
+    <style name="ActionBarDropDownNav" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/ad_spinner_background_holo_light</item>
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ad_selectable_background</item>
+    </style>
+
+    <!-- ActionBar下拉导航内部按钮的样式 -->
+    <style name="ActionBarDropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ad_selectable_background</item>
+    </style>
+</resources>

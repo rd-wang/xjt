@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#ffffff00</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="noneColor">#00000000</color>
+    <color name="yel">#ffdea700</color>
+    <color name="lineColor">#ffd7d7d7</color>
+    <color name="org">#ff6a522b</color>
+    <color name="selected">#ffd1f2f7</color>
+    <color name="bl">#ff16b8d5</color>
+    <color name="background_gray">#ffdddfde</color>
+    <color name="grey">#ff404040</color>
+    <color name="lightblue">#ff6495ed</color>
+    <color name="green2">#ff00cc00</color>
+    <color name="backgroundColor">#ffd4e3ff</color>
+    
+    <color name="tab_text_normal">#696969</color>
+    <color name="tab_text_selected">#73bf40</color>
+    
+    <!-- ActionBar背景颜色 -->
+   	<color name="actionbar_bg">#3ca0ec</color>
+   	<color name="whiteGray">#ffC9CACB</color>
+   	<color name="android_green">#FFA4C639</color>
+    <color name="honeycombish_blue">#FF58BAED</color>
+    <color name="soft_grey">#FF777777</color>
+    <color name="background">#FFEFEFEF</color>
+</resources>

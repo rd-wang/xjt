@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- 默认IconPageIndicator 不支持 ，点击图标导航页面 -->
+<!--     <com.viewpagerindicator.IconPageIndicator -->
+<!--         android:id="@+id/indicator" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:background="#FFFFFF" -->
+<!--         /> -->
+	  
+	  <!-- 扩展IconPageIndicator （支持图片加文字），现采用图片 -->
+ 	  <com.catsic.core.custom.viewpagerindicator.IconTabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        />
+ 	  <View android:layout_width="match_parent"
+          android:id="@+id/divider"
+          android:layout_above="@id/indicator"
+          android:layout_height="1px"
+          android:background="#ababab"/>
+ 	  <android.support.v4.view.ViewPager
+ 	        android:layout_above="@id/divider"
+	        android:id="@+id/pager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+        />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fatext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+        <TableRow 
+            android:id="@+id/tr_wccs"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+	        android:gravity="center_vertical"
+	        >
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="cdbh"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:tag="leftZds"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:tag="rightZds"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:tag="left"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:tag="right"/>
+             <ImageView android:id="@+id/btn_delete" 
+                android:tag="btn_delete"
+	            android:layout_width="30.0dip" 
+	            android:layout_height="30.0dip" 
+	            android:layout_weight="1"
+	            android:src="@android:drawable/ic_delete" />
+        </TableRow>
+</TableLayout>

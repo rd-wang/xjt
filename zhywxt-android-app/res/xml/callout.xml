@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <calloutViewStyle titleTextColor="#00ff00"><!--标题颜色-->
+        titleTextSize = 10; <!--标题字体大-->
+        titleTextStyle = 0; <!--标题字体-->
+        backgroundColor="#ffffff" <!--背景颜色-->
+        backgroundAlpha="255" <!--透明度 0(透明) to 255(不透明) -->
+        frameColor="#000000" <!--边框颜色-->
+        flat="true" <!--是否会在3D效果-->
+        cornerCurve="0"   <!--圆角的度数-->
+        anchor="5"> <!--锚的位置（0-8）-->
+    </calloutViewStyle>
+
+</resources>

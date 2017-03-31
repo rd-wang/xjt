@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.catsic.biz.yh.activity.QljcJEditeQlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_qlmc"
+            style="@style/black_normal_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="小沟桥" />
+
+        <TextView
+            android:id="@+id/tv_qlms"
+            style="@style/gray_normal_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="10*8,崔州线(x001,k10.35)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="负 责 人 ：" />
+
+            <EditText
+                android:id="@+id/qljc_fzr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记 录 人 ：" />
+
+            <EditText
+                android:id="@+id/qljc_jlr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检测时间：" />
+
+            <EditText
+                android:id="@+id/qljc_qlmc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_weight="1.0"
+                android:inputType="datetime" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="检测部位：" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/add_normal" />
+
+
+        </LinearLayout>
+
+        <com.catsic.core.widget.MyListView
+            android:id="@+id/ll_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></com.catsic.core.widget.MyListView>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="@string/lab_tpxx" />
+
+            <GridView
+                android:id="@+id/gv_images"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="5dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"></GridView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="提交"
+                android:textSize="20sp"
+                bbutton:bootstrapSize="xl"
+                bbutton:bootstrapBrand="success" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

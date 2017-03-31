@@ -1,0 +1,4 @@
+include ':ViewPageIndicator'
+include ':SlidingMenu'
+include ':zhywxt-android-app'
+include ':actionbarsherlock'

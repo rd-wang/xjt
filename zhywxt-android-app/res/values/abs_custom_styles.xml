@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<style name="Theme.AbsSherlock.Light" parent="Theme.Sherlock.Light">
+	    <item name="actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
+	    <item name="android:actionBarSize">55dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
+        <item name="android:actionBarItemBackground">@drawable/ad_selectable_background</item>
+        <item name="actionBarItemBackground">@drawable/ad_selectable_background</item>
+        <item name="android:popupMenuStyle">@style/Theme.MyTheme.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Theme.MyTheme.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.MyTheme.DownListView</item>
+        <item name="dropDownListViewStyle">@style/Theme.MyTheme.DownListView</item>
+        <item name="android:actionBarTabStyle">@style/Theme.MyTheme.ActionBarTabStyle</item>
+        <item name="actionBarTabStyle">@style/Theme.MyTheme.ActionBarTabStyle</item>
+        <item name="android:actionDropDownStyle">@style/Theme.MyTheme.DropDownNav</item>
+        <item name="actionDropDownStyle">@style/Theme.MyTheme.DropDownNav</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/ad_btn_check_holo_light</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/ad_btn_radio_holo_light</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/MyOverflowButton</item>-->
+    </style>
+    
+    <style name="Theme.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">  
+       <item name="android:background">@drawable/header_bg</item>  
+       <item name="background">@drawable/header_bg</item>  
+       <item name="android:titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>  
+       <item name="titleTextStyle">@style/Theme.MyTheme.ActionBar.TitleTextStyle</item>  
+    </style>  
+    
+    <style name="Theme.MyTheme.ActionBar.TitleTextStyle" parent="Widget">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <!-- style the overflow menu -->
+    <style name="Theme.MyTheme.PopupMenu" parent="Widget.Sherlock.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+    </style>
+
+    <!-- style the items within the overflow menu -->
+    <style name="Theme.MyTheme.DownListView" parent="Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ad_selectable_background</item>
+    </style>
+
+    <!-- style for the tabs -->
+    <style name="Theme.MyTheme.ActionBarTabStyle" parent="Widget.Sherlock.Light.ActionBar.TabBar">
+        <item name="android:background">@drawable/actionbar_tab_bg</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+    </style>
+
+    <!-- style the list navigation -->
+    <style name="Theme.MyTheme.DropDownNav" parent="Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/ad_spinner_background_holo_light</item>
+        <item name="android:popupBackground">@drawable/ad_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/ad_selectable_background</item>
+    </style>
+    
+    <!-- the following can be used to style the overflow menu button
+         only do this if you have an *extremely* good reason to!! -->
+    <!--<style name="MyOverflowButton" parent="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_view</item>
+        <item name="android:background">@drawable/action_button_background</item>
+    </style>-->
+    
+    
+</resources>

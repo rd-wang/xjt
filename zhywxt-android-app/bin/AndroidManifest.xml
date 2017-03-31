@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.catsic"
+    android:versionCode="1204"
+    android:versionName="1.204" >
+
+    <!-- 屏幕兼容模式配置 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 测试用例 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Tests for zhywxt-android-app"
+        android:targetPackage="com.catsic" />
+
+    <application
+        android:name=".core.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/appName"
+        android:largeHeap="true"
+        android:theme="@style/Theme.AbsSherlock.Light" >
+
+        <!-- 在本应用中导入需要使用的包，放在application里面activity外面 -->
+        <uses-library android:name="android.test.runner" />
+
+        <!-- android:name=".hybrid.activity.MainActivity" -->
+        <activity android:name=".core.activity.WelcomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".core.activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".core.activity.AboutActivity"
+            android:parentActivityName=".core.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".core.activity.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".core.activity.SettingActivity"
+            android:parentActivityName=".core.activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".core.activity.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".biz.main.activity.MainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <!-- common -->
+        <activity android:name=".biz.common.activity.SelXmjbxxListActivity" />
+        <!-- common -->
+
+
+        <!-- 路损列表 -->
+        <activity
+            android:name=".biz.yh.activity.LSListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+
+            <!-- 解决： parentActivityName 仅对4.0以后的才有效，在低版本上将会出现 IllegalArgumentException 异常： -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+        <!-- 路损信息录入 -->
+        <activity
+            android:name=".biz.yh.activity.LSActivity"
+            android:parentActivityName=".biz.yh.activity.LSListActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.yh.activity.LSListActivity" />
+        </activity>
+        <!-- 路损明细 -->
+        <activity
+            android:name=".biz.yh.activity.LSViewActivity"
+            android:parentActivityName=".biz.yh.activity.LSListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.yh.activity.LSListActivity" />
+        </activity>
+        <!-- 路损定位 -->
+        <activity
+            android:name=".biz.yh.activity.LSLocationActivity"
+            android:parentActivityName=".biz.yh.activity.LSListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.yh.activity.LSListActivity" />
+        </activity>
+        <!-- 路损查询 -->
+        <activity
+            android:name=".biz.query.activity.LsListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 路政巡查 -->
+        <activity
+            android:name=".biz.lz.activity.LzXcjlActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 路政巡查列表 -->
+        <activity
+            android:name=".biz.lz.activity.LzXcjlListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 路政巡查明细 -->
+        <activity
+            android:name=".biz.lz.activity.LzXcjlViewActivity"
+            android:parentActivityName=".biz.lz.activity.LzXcjlListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.lz.activity.LzXcjlListActivity" />
+        </activity>
+
+        <!-- 养护巡查 -->
+        <activity
+            android:name=".biz.yh.activity.YhXcjlActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 养护巡查列表 -->
+        <activity
+            android:name=".biz.yh.activity.YhXcjlListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 养护巡查明细 -->
+        <activity
+            android:name=".biz.yh.activity.YhXcjlViewActivity"
+            android:parentActivityName=".biz.yh.activity.YhXcjlListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.yh.activity.YhXcjlListActivity" />
+        </activity>
+
+        <!-- 相册集预览 -->
+        <activity
+            android:name=".core.activity.PhotoAlbumActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 单一相册图片预览 -->
+        <activity
+            android:name=".core.activity.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 选择后的图片预览，编辑 -->
+        <activity
+            android:name=".core.activity.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 图片预览 -->
+        <activity
+            android:name=".core.activity.PhotoViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <!-- 任务中心 -->
+        <activity
+            android:name=".biz.task.activity.TaskListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".biz.task.activity.TaskLocationActivity"
+            android:parentActivityName=".biz.task.activity.TaskActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.task.activity.TaskListActivity" />
+        </activity>
+
+        <!-- 建设检查 -->
+        <activity
+            android:name=".biz.js.activity.XmjbxxListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 建设检查定位 -->
+        <activity
+            android:name=".biz.js.activity.JsjcLocationActivity"
+            android:parentActivityName=".biz.js.activity.XmjbxxListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.XmjbxxListActivity" />
+        </activity>
+
+        <!-- 质量检测-压实度 -->
+        <activity
+            android:name=".biz.js.activity.ZljcYsdActivity"
+            android:parentActivityName=".biz.js.activity.XmjbxxListActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.XmjbxxListActivity" />
+        </activity>
+        <!-- 质量检测-压实度Tab -->
+        <activity android:name=".biz.js.activity.ZljcYsdTabActivity" />
+        <!-- 质量检测-弯沉测试 -->
+        <activity
+            android:name=".biz.js.activity.ZljcWccsActivity"
+            android:parentActivityName=".biz.js.activity.XmjbxxListActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.XmjbxxListActivity" />
+        </activity>
+        <!-- 质量检测-列表 -->
+        <activity
+            android:name=".biz.js.activity.ZljcListActivity"
+            android:parentActivityName=".biz.js.activity.XmjbxxListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.XmjbxxListActivity" />
+        </activity>
+        <!-- 质量检测-明细 -->
+        <activity android:name=".biz.js.activity.ZljcViewActivity" />
+
+        <!-- 质量巡查列表 -->
+        <activity
+            android:name=".biz.js.activity.ZlxcListActivity"
+            android:parentActivityName=".biz.main.activity.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.main.activity.MainActivity" />
+        </activity>
+
+        <!-- 质量巡查 -->
+        <activity
+            android:name=".biz.js.activity.ZlxcActivity"
+            android:parentActivityName=".biz.js.activity.ZlxcListActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.ZlxcListActivity" />
+        </activity>
+        <!-- 质量巡查反馈 -->
+        <activity
+            android:name=".biz.js.activity.ZlxcRespActivity"
+            android:parentActivityName=".biz.js.activity.ZlxcListActivity"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".biz.js.activity.ZlxcListActivity" />
+        </activity>
+
+        <!-- common -->
+        <activity android:name=".core.activity.LxListActivity" >
+        </activity>
+
+        <!-- hybrid test -->
+        <activity android:name="com.catsic.hybrid.activity.TestActivity" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+</manifest>

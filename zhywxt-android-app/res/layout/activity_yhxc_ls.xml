@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fatext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_szdm" />
+
+            <EditText
+                android:id="@+id/et_szdm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_shlx" />
+
+            <EditText
+                android:id="@+id/et_shlx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0" />
+
+            <ImageView
+                android:id="@+id/btn_shlx"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="18.0dip"
+                android:src="@android:drawable/ic_input_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_qzzh" />
+
+            <EditText
+                android:id="@+id/et_qdzh"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0" />
+
+            <EditText
+                android:id="@+id/et_zdzh"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_fxsj" />
+
+            <EditText
+                android:id="@+id/et_fxsj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:inputType="datetime" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_xcqk" />
+
+            <EditText
+                android:id="@+id/et_xcqk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:lines="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_czcs" />
+
+            <EditText
+                android:id="@+id/et_czcs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="50.0dip"
+                android:lines="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_normal_18"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="right"
+                android:text="@string/lab_tpxx" />
+
+            <GridView
+                android:id="@+id/gv_images"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="5dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"></GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btn_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:text="@string/save"
+                bbutton:bootstrapSize="xl"
+                android:textSize="20sp"
+                bbutton:bootstrapBrand="success" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

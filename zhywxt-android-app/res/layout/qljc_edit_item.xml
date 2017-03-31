@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:paddingLeft="10dip">
+
+        <TextView
+            android:id="@+id/tv_mc"
+            style="@style/black_normal_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="小红桥" />
+
+        <TextView
+            android:id="@+id/tv_xmms"
+            style="@style/gray_normal_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:text="10*8米，大周线(x001)" />
+
+        <TextView
+            android:id="@+id/tv_jy"
+            style="@style/gray_normal_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="桥面受损，范围20m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="24dp"
+            android:src="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

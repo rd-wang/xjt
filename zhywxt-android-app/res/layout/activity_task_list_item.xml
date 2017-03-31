@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    style="@style/listView_simple"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dip">
+
+        <TextView
+            android:id="@+id/tv_taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            style="@style/black_normal_18"
+             />
+
+        <TextView
+            android:id="@+id/tv_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="8dip"
+            style="@style/gray_normal_16"
+             />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+         >
+        
+        <Button
+             android:id="@+id/btn_item_go"
+             android:layout_width="24dp"
+             android:layout_height="24dp"
+            />
+
+        <Button
+            android:id="@+id/btn_item_upload"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>
